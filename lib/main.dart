@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Splash());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: const Splash());
   }
 }
 
@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF0F0F0), // fundo cinza claro
+      backgroundColor: Color.fromARGB(255, 255, 255, 255), // fundo cinza claro
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -39,11 +39,7 @@ class _LoginPageState extends State<LoginPage> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(25),
               boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
-                  blurRadius: 15,
-                  offset: const Offset(0, 10),
-                ),
+                
               ],
             ),
             child: Column(

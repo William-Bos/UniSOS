@@ -29,7 +29,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     // Este Scaffold é o layout real da tela de splash (logo e título)
     return Scaffold(
-      backgroundColor: Color(0xFFF0F0F0), // fundo cinza claro
+      backgroundColor: Color.fromARGB(255, 255, 255, 255), // fundo cinza claro
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -39,11 +39,7 @@ class _SplashState extends State<Splash> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(25),
               boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
-                  blurRadius: 15,
-                  offset: const Offset(0, 10),
-                ),
+                
               ],
             ),
             child: Column(

@@ -66,7 +66,7 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF0F0F0), // Fundo cinza claro da imagem
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255), // Fundo cinza claro da imagem
       body: Center(
         child: SingleChildScrollView(
           child: Container(
@@ -76,11 +76,7 @@ class MenuPage extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(25),
               boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
-                  blurRadius: 15,
-                  offset: const Offset(0, 10),
-                ),
+                
               ],
             ),
             child: Column(
